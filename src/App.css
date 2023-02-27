@@ -1,0 +1,58 @@
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,600,700,800";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* sans-serif is back up font in case Roboto has prolems */
+  font-family: "Rubik", sans-serif;
+  /* padding-bottom: 1000px; */
+  /* margin-bottom: 10000px; */
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 5000px;
+  width: 100%;
+}
+.fade-up {
+  animation: 1s ease-out 0s 1 fadeInUp;
+}
+.fade-left {
+  animation: fadeInLeft 1.5s;
+}
+.fade-right {
+  animation: fadeInRight 1.5s;
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
